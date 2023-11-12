@@ -1,4 +1,4 @@
-package com.example.its.web.issue;
+package com.example.its.form;
 
 import lombok.Data;
 
@@ -6,7 +6,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
 @Data
-public class IssueForm {
+public class UserForm {
 
     @NotBlank
     @Size(max=256)

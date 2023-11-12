@@ -1,4 +1,4 @@
-package com.example.its.web;
+package com.example.its.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,5 +9,15 @@ public class IndexController {
     @GetMapping
     public String index() {
         return "index";
+    }
+    
+    @GetMapping("/login")
+    public String showLoginForm() {
+    	return "login";
+    }
+    
+    @GetMapping("/logout")
+    public String showLogoutForm() {
+    	return "logout";
     }
 }
